@@ -28,6 +28,9 @@ processes may be simulated, but not e.g. ep, gammap or gammagamma collisions.
 %package	-n %{devname}
 Summary:	Pythia runtime and development files
 Group:		Development/C++
+Requires:	%{name} = %{version}-%{release}
+Provides:	%{name}-devel = %{version}-%{release}
+Provides:	lib%{name}-devel = %{version}-%{release}
 
 %description	-n %{devname}
 Pythia runtime and development files.
