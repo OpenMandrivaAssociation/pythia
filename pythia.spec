@@ -2,7 +2,7 @@
 %define major	8
 %define minor	1
 %define version	%{major}.%{minor}
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 %define devname	%mklibname %{name} -d
 
@@ -53,8 +53,8 @@ mkdir -p %{buildroot}%{_libdir}
 cp -fa lib/*.so lib/archive/*.a %{buildroot}%{_libdir}
 mkdir -p %{buildroot}%{_includedir}/%{name}
 cp -fa include/[A-Z]*.h %{buildroot}%{_includedir}/%{name}
-mkdir -p %{buildroot}%{_docdir}/%{name}
-cp -fa htmldoc/* %{buildroot}%{_docdir}/%{name}
+mkdir -p %{buildroot}%{_datadir}/%{name}
+cp -fa AUTHORS GUIDELINES examples htmldoc phpdoc xmldoc worksheet.pdf %{buildroot}%{_datadir}/%{name}
 
 
 #------------------------------------------------------------------------
@@ -63,15 +63,10 @@ rm -fr %{buildroot}
 
 
 #------------------------------------------------------------------------
-%files
-%defattr(-,root,root)
-%doc %dir %{_docdir}/%{name}
-%doc %{_docdir}/%{name}/*
-
-
-#------------------------------------------------------------------------
 %files		-n %{devname}
 %defattr(-,root,root)
+%dir %{_datadir}/%{name}
+%{_datadir}/%{name}/*
 %{_includedir}/%{name}/*.h
 %{_libdir}/*.a
 %{_libdir}/*.so
