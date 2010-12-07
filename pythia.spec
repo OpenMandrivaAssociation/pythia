@@ -2,7 +2,7 @@
 %define major	8
 %define minor	1
 %define version	%{major}.%{minor}
-%define release	%mkrel 4
+%define release	%mkrel 5
 
 %define devname	%mklibname %{name} -d
 
