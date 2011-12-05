@@ -2,7 +2,7 @@
 %define major	8
 %define minor	1
 %define version	%{major}.%{minor}
-%define release	%mkrel 5
+%define release	%mkrel 6
 
 %define devname	%mklibname %{name} -d
 
@@ -13,7 +13,7 @@ Version:	%{version}
 Release:	%{release}
 Summary:	High-energy pp and pbarp collisions simulation
 URL:		http://home.thep.lu.se/~torbjorn/Pythia.html
-Source0:	http://home.thep.lu.se/~torbjorn/pythia8/pythia8130.tgz
+Source0:	http://home.thep.lu.se/~torbjorn/pythia8/pythia8157.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:	hepmc-devel
@@ -37,7 +37,7 @@ Pythia runtime and development files.
 
 #------------------------------------------------------------------------
 %prep
-%setup -q -n pythia8130
+%setup -q -n pythia8157
 
 
 #------------------------------------------------------------------------
