@@ -69,3 +69,32 @@ rm -fr %{buildroot}
 %{_includedir}/%{name}/*.h
 %{_libdir}/*.a
 %{_libdir}/*.so
+
+
+%changelog
+* Mon Dec 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 8.1-6mdv2012.0
++ Revision: 737903
+- Update to latest upstream release.
+
+* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 8.1-5mdv2011.0
++ Revision: 614630
+- the mass rebuild of 2010.1 packages
+
+* Fri May 21 2010 Frederic Crozat <fcrozat@mandriva.com> 8.1-4mdv2010.1
++ Revision: 545674
+- force rebuild
+
+* Thu Dec 03 2009 Paulo Andrade <pcpa@mandriva.com.br> 8.1-3mdv2010.1
++ Revision: 473113
++ rebuild (emptylog)
+
+* Thu Dec 03 2009 Paulo Andrade <pcpa@mandriva.com.br> 8.1-2mdv2010.1
++ Revision: 473110
+- Create only a devel package
+- Move files from docdir to datadir to make it easier to adapt PYTHIA8DIR
+
+* Wed Dec 02 2009 Paulo Andrade <pcpa@mandriva.com.br> 8.1-1mdv2010.1
++ Revision: 472732
+- Import pythia 8.1
+- pythia
+
