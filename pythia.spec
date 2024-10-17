@@ -12,7 +12,7 @@ License:	GPLv2
 Version:	%{version}
 Release:	%{release}
 Summary:	High-energy pp and pbarp collisions simulation
-URL:		http://home.thep.lu.se/~torbjorn/Pythia.html
+URL:		https://home.thep.lu.se/~torbjorn/Pythia.html
 Source0:	http://home.thep.lu.se/~torbjorn/pythia8/pythia8157.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
